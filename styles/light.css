@@ -16,7 +16,7 @@
   --accent-color-secondary: #353430;
   --text-color: #353430;
   --text-color-secondary: #353430;
-  
+  --background-image: url(../images/cover-image-light.png);
   --button-hover: rgba(50, 49, 45, 0.40);
   
   
@@ -25,7 +25,10 @@
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
   display: block;
+  background-image: var(--background-image);
+
 }
+
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -44,7 +47,15 @@
     background-image: var(--background-image);
   }
 
-  .rec {
+  .theme-light .rec {
     display: none;
+    color: transparent;
   }
+  
+  
+  .theme-light .rec::after {
+    display: none;
+    color: transparent;
+  }
+
 }

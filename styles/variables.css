@@ -3,7 +3,7 @@
   и их переопределение под различные устройства
 */
 :root {
-  --main-font-family: 'IBM Plex mono-bold', sans-serif;
+  --main-font-family: "IBM Plex Mono", sans-serif;
   --main-font-size: 18px;
   --main-line-height: 130%;
   --main-title-color: #DB00FF;
@@ -15,6 +15,7 @@
   --text-color-secondary: #000028;
   --button-hover-color: #FF0070;
   --background-image: url(../images/cover-image-dark.png);
+  
   --horizontal: 10px;
   --vertical: 40px;
   --gap: 50px;
