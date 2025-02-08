@@ -1,0 +1,335 @@
+/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+
+.page {
+  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-image: var(--background-image);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--background-color, #000028);
+  font-family: var(--main-font-family, 'Arial', sans-serif);
+  font-size: var(--main-font-size, 18px);
+  line-height: var(--main-line-height);
+  font-style: normal;
+  font-weight: 400;
+  color: var(--text-color);
+
+}
+
+
+/* header */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content fit-content 1fr;
+  justify-content: space-between;
+  position: relative;
+  block-size: 100vb;
+  min-block-size: 668px; 
+  padding: 0 var(--horizontal, 10px);
+}
+
+.header__theme-menu {
+  justify-self: end;
+  align-self: center;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  color: #ff0070;
+  background-color: transparent;
+  border: none;
+  size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: lowercase;
+  border: none;
+  padding: 2px 12px;
+  text-align: center;
+  cursor: pointer;
+
+  
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid #ff0070;
+}
+
+.header__theme-menu-button:focus {
+  outline: 0;
+  border-bottom: 1px solid;
+}
+
+
+.header__theme-menu-button:focus-visible {  
+  outline: 1px solid #ff0070;
+}
+
+
+.header_title {
+  
+  align-self: center;
+  color: var(  --main-title-color);
+  font-family: var(--main-font-family);
+  font-size: var(--main-title-size);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%;
+  text-shadow: 4px 4px 0px var(--accent-color);
+}
+
+.header_description {
+  justify-self: end;
+  align-self: start;
+  max-inline-size: 355px;
+  inline-size: 100%;
+  font: inherit;
+  font-weight: 700;
+}
+
+/* corners&rec* */
+
+.decorated-zone::before,
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+}
+
+.decorated-zone::before {
+  inset-block-end: 10px;
+  inset-inline-start: 10px;
+  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--accent-color);
+}
+
+.decorated-zone::after {
+  inset-block-start: 10px;
+  inset-inline-end:  10px;
+  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--accent-color);
+}
+
+
+.rec {
+  position: absolute;
+  inset-inline-end: 39px;
+  inset-block-start: 11px;
+  color: var(--accent-color);
+  font: inherit;
+  line-height: 138%;
+  text-transform: uppercase;
+}
+
+.rec::after {
+  position: absolute;
+  inset-inline-end: -20px;
+  inset-block-start: 9px;
+  display: block;
+  content: "";
+  inline-size: 7px;
+  block-size: 7px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 3px 3px var(--accent-color);
+}
+
+
+
+
+/* main - cards */
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 40px 10px;
+} 
+
+
+.section,
+.cards_content {
+  display: grid;
+  gap: 20px;
+}
+
+.section_title {
+  font: inherit;
+  font-weight: 700;
+  color:var(--accent-color, #FF0070);
+  font-size: 1rem;
+
+}
+
+.section_subtitle {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: inherit;
+  
+}
+
+.text_link {
+  font-family: var(--main-font-family);
+  text-shadow: 2px 1px 0 var(--accent-color);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.text_link:hover {
+  border-block-end: 1px solid currentColor;
+}
+
+.text_link:focus-visible {
+  outline: 1px solid currentColor;
+}
+
+
+.title-decor {
+  inline-size: 100%;
+  background-color: var(--accent-color,#FF0070);
+  padding: 0 10px;
+  color: var(--card-title-decor, #000028);
+  font-size: 18px;
+}
+
+.card_title_thin {
+  font-weight: lighter;
+}
+
+.card_text {
+  color: var(--text-color, #F1B2CE);
+  
+}
+
+.card_title {
+  color: var(--card-title-decor, #000028);
+  
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  inline-size: 100%;
+  
+}
+
+
+
+.section_pictures {
+  gap: 10px;
+}
+
+.section_image {
+  block-size: auto;
+  inline-size: 100%;
+
+}
+
+
+
+/* footer */
+
+
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-block-size: 668px;
+  block-size: 100vb;
+  padding: 10px;
+}
+
+.footer_title {
+  font-family: var(--main-font-family);
+  color: var(--main-title-color);
+  font-size: var(--main-title-size);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%;
+  text-shadow: 2px 2px 0px var(--accent-color);
+}
+
+
+
+
+@media (width >= 768px) {
+  .header-decor {
+    inset-inline-end: 49px;
+    inset-block-start: 21px;
+  }
+
+  .header_title {
+    position: relative;
+    inset-inline-start: -20px;
+  }
+
+  .header_description {
+    max-inline-size: 364px;
+  }
+    
+  .section_why,
+  .section_how {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .section_what .section_title {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+
+  .section_pictures .section_subtitle {
+    grid-column-end: span 3;
+  }
+  
+  .section_image {
+    block-size: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .section_image:first-of-type,
+  .section_image:last-of-type {
+    grid-column-end: span 2;
+  }
+
+  .section_image:nth-of-type(2),
+  .section_image:nth-of-type(3) {
+    grid-row-end: span 2;
+  }
+}
+
+@media (width >= 1024px) {
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+  }
+  
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+
+  .header_description {
+    max-inline-size: 491px;
+  }
+
+  .section_why,
+  .section_how {
+    gap: 10px;
+  }
+
+  .section_what .cards_content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
