@@ -4,7 +4,7 @@
 */
 :root {
   --main-font-family: "IBM Plex Mono", sans-serif;
-  --main-font-size: 18px;
+  --main-font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
   --main-line-height: 130%;
   --main-title-color: #DB00FF;
   --main-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
