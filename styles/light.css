@@ -29,6 +29,9 @@
 
 }
 
+.theme-light .rec {
+  display: none;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -47,15 +50,9 @@
     background-image: var(--background-image);
   }
 
-  .theme-light .rec {
+  .theme-light .page .rec {
     display: none;
-    color: transparent;
   }
   
-  
-  .theme-light .rec::after {
-    display: none;
-    color: transparent;
-  }
 
 }
