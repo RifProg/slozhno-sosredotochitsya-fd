@@ -60,7 +60,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--accent-color-secondary); 
+  outline: 1px solid var(--accent-color-secondary);
 }
 
 .header__theme-menu-button:focus {

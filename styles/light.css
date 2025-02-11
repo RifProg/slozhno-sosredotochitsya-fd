@@ -23,7 +23,7 @@
 }
 
 .theme-light .rec {
-  display: none; 
+  display: none;
 }
 
 @media (prefers-color-scheme: light) {
