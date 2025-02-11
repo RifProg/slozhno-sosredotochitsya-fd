@@ -16,6 +16,7 @@
   --text-color: #F1B2CE;
   --text-color-secondary: #000028;
   --button-hover: rgba(255, 0, 112, 0.40);
+  --background-image: url(../images/cover-image-dark.png);
   
 }
 
@@ -24,25 +25,3 @@
   display: block;
 }
  
-
-/*
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #000028;
-    --main-title-color: #DB00FF;
-    --accent-color: #FF0070;
-    --accent-color-secondary: #FF0070;
-    --text-color: #F1B2CE;
-    --text-color-secondary: #000028;
-    --button-hover: rgba(255, 0, 112, 0.40);
-    
-  }
-
-  .page {
-    background-image: var(--background-image);
-  }
-
-  .rec {
-    display: block;
-  }
-} */
