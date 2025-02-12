@@ -45,7 +45,7 @@
 }
 
 .header__theme-menu-button {
-  color: var(--accent-color);
+  color: var(--accent-color-secondary);
   background-color: transparent;
   border: none;
   font-size: 18px;
@@ -60,7 +60,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--accent-color-secondary);
+  outline: 1px solid var(--button-hover-color);
 }
 
 .header__theme-menu-button:focus {
@@ -76,6 +76,7 @@
 }
 
 .header__theme-menu-button_active {
+  outline: 1px solid var(--accent-color-secondary);
   pointer-events: none;
 }
 
